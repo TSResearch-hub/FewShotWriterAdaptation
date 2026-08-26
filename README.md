@@ -22,10 +22,9 @@ The model learns to align ambiguous strokes in the query with visually and conte
   <img src="images/attention_maps.png" alt="Cross-attention between query and context" width="900">
 </p>
 
-Each panel shows the query line $X$ (top) and the context lines $X_c$ (bottom) the model attends to when predicting an ambiguous character $\hat{y}$. The highlighted regions in the context share the visual/writing pattern the model uses to disambiguate the circled character in the query.
+Each panel shows the query line $X$ (top) and the context lines $X_c$ (bottom) the model attends to when predicting a character $\hat{y}$. The highlighted regions in the context share the visual/writing pattern the model uses to disambiguate the circled character in the query.
 
-### Result: better adaptation to writer-specific styles
-
+### Result: adaptation to writer-specific styles
 By conditioning on a handwritten context, Rosetta-HTR corrects errors that a standard HTR model — with no access to writer-specific context — makes on ambiguous or unusual letter shapes:
 
 <p align="center">
@@ -48,10 +47,11 @@ By conditioning on a handwritten context, Rosetta-HTR corrects errors that a sta
 
 If you use this code, please cite:
 
-```bibtex
-@inproceedings{rosettahtr2026,
-  title     = {Few-Shot Writer Adaptation via Multimodal In-Context Learning},
-  booktitle = {International Conference on Document Analysis and Recognition (ICDAR)},
-  year      = {2026}
+```@article{simon2026few,
+  title={Few-shot Writer Adaptation via Multimodal In-Context Learning},
+  author={Simon, Tom and Nicolas, Stephane and Tranouez, Pierrick and Chatelain, Clement and Paquet, Thierry},
+  journal={arXiv preprint arXiv:2603.29450},
+  year={2026}
 }
+
 ```
