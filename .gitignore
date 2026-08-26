@@ -1,0 +1,29 @@
+__pycache__/
+*.pyc
+
+# Model checkpoints (too large for git)
+checkpoints/
+*.pt
+*.pth
+
+# Training run outputs / visualizations
+attention/
+wandb/
+
+# Raw datasets (too large for git — fetch/generate separately)
+data/iam_per_scripter_split_150DPI/
+data/rimes_per_scripter_split_150DPI/
+
+# Font files (too large / not redistributable)
+*.ttf
+*.otf
+
+# Environments
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
